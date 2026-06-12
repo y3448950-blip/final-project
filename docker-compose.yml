@@ -1,0 +1,10 @@
+services:
+  my-website:
+    build: .
+    ports:
+      - "8080:80"
+
+  todo-app:
+    image: prologic/todo
+    ports:
+      - "8081:8000"
